@@ -10,8 +10,9 @@ analyzer:
     - lib/gen
     - packages/core/lib/gen
   strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
   language:
     strict-inference: true
     strict-raw-types: true
