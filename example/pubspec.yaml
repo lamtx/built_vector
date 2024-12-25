@@ -1,0 +1,13 @@
+name: built_vector_example
+version: 0.1.0
+description: Demonstrates Generate Flutter vector code from SVG-like files.
+homepage: https://github.com/aloisdeniel/built_vector
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  built_vector:
+    path: ../
+  flutter:
+    sdk: flutter

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 class Icons {
-  static simple(Canvas canvas, Size size, {Color fill: null}) {
+  static simple(Canvas canvas, Size size, {Color? fill}) {
     canvas.translate(0.0, 0.0);
     canvas.scale((size.width / 61.000000), (size.height / 58.000000));
     final paint = Paint();
@@ -23,7 +23,7 @@ class Icons {
     canvas.drawCircle(Offset(45.500000, 42.500000), 15.500000, paint);
   }
 
-  static warning(Canvas canvas, Size size, {Color fill: null}) {
+  static warning(Canvas canvas, Size size, {Color? fill}) {
     canvas.translate(0.0, 0.0);
     canvas.scale((size.width / 24.000000), (size.height / 24.000000));
     final paint = Paint();

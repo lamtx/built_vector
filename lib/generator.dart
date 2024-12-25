@@ -21,7 +21,7 @@ class FlutterGenerator extends Generator {
         ..methods.addAll(assets.vectors.map(_generateVector)))));
     final emitter = DartEmitter();
     final source = '${library.accept(emitter)}';
-    return DartFormatter().format(source);
+    return DartFormatter(languageVersion: DartFormatter.latestLanguageVersion).format(source);
   }
 
   Method _generateVector(Vector vector) {

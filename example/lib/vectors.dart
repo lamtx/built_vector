@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 
-typedef void Paint(Canvas canvas, Size size, {Color fill});
+typedef void Paint(Canvas canvas, Size size, {Color? fill});
 
 class Vector extends StatelessWidget {
   final Paint _paint;
-  final Color _fill;
-  Vector(this._paint, { Color fill: null}) : this._fill = fill;
+  final Color? _fill;
+  Vector(this._paint, { Color? fill}) : this._fill = fill;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class Vector extends StatelessWidget {
 
 class _VectorPainter extends CustomPainter {
   final Paint _paint;
-  final Color _fill;
+  final Color? _fill;
   _VectorPainter(this._paint, this._fill);
   
   @override
